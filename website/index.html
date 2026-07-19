@@ -3,81 +3,429 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Linux infrastructure portfolio — secure, automated, and resilient systems.">
-  <title>ASIR / Infrastructure Engineer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SEO — CORE
+  ═══════════════════════════════════════════════════════════ -->
+  <title>Asir Hashmi — Linux Infrastructure Engineer</title>
+  <meta name="description"   content="Portfolio of Asir Hashmi — Linux infrastructure engineer building secure, observable, and resilient systems. SSH, Tailscale, Apache, Kali Linux, networking, automation.">
+  <meta name="keywords"      content="Linux infrastructure, DevOps, SSH, Tailscale, Apache, Kali Linux, networking, systems administration, remote access, homelab, RHCSA, CCNA">
+  <meta name="author"        content="Asir Hashmi">
+  <meta name="robots"        content="index, follow">
+  <meta name="theme-color"   content="#070b10">
+  <link rel="canonical"      href="https://your-high-lord.github.io/remote-linux-infrastructure-lab/">
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SEO — OPEN GRAPH
+  ═══════════════════════════════════════════════════════════ -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Asir Hashmi — Linux Infrastructure Engineer">
+  <meta property="og:description" content="Secure, automated, and resilient Linux infrastructure. SSH · Tailscale · Apache · Kali Linux.">
+  <meta property="og:url"         content="https://your-high-lord.github.io/remote-linux-infrastructure-lab/">
+  <meta property="og:site_name"   content="Asir Hashmi · INFRA">
+  <meta property="og:locale"      content="en_US">
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SEO — TWITTER CARD
+  ═══════════════════════════════════════════════════════════ -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Asir Hashmi — Linux Infrastructure Engineer">
+  <meta name="twitter:description" content="Secure, automated, and resilient Linux infrastructure. SSH · Tailscale · Apache · Kali Linux.">
+
+  <!-- ═══════════════════════════════════════════════════════════
+       FAVICON
+  ═══════════════════════════════════════════════════════════ -->
+  <link rel="icon"             type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="shortcut icon"    type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon"                      href="assets/favicon.svg">
+
+  <!-- ═══════════════════════════════════════════════════════════
+       PERFORMANCE — PRECONNECT / DNS PREFETCH
+  ═══════════════════════════════════════════════════════════ -->
+  <link rel="preconnect"    href="https://fonts.googleapis.com">
+  <link rel="preconnect"    href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch"  href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch"  href="https://fonts.gstatic.com">
+
+  <!-- ═══════════════════════════════════════════════════════════
+       FONTS — Google Fonts (display=swap prevents FOIT)
+  ═══════════════════════════════════════════════════════════ -->
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- ═══════════════════════════════════════════════════════════
+       STYLES
+  ═══════════════════════════════════════════════════════════ -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- ═══════════════════════════════════════════════════════════
+       STRUCTURED DATA — JSON-LD
+  ═══════════════════════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Asir Hashmi",
+    "url": "https://your-high-lord.github.io/remote-linux-infrastructure-lab/",
+    "sameAs": [
+      "https://github.com/Your-high-lord",
+      "https://www.linkedin.com/in/asir-hashmi-ba8398225"
+    ],
+    "jobTitle": "Linux Infrastructure Engineer",
+    "description": "Linux infrastructure engineer building secure, observable, and resilient systems.",
+    "email": "tihotspot12345@gmail.com"
+  }
+  </script>
 </head>
+
 <body>
-  <div class="noise" aria-hidden="true"></div><div class="orb orb-one" aria-hidden="true"></div><div class="orb orb-two" aria-hidden="true"></div>
-  <header class="nav-wrap"><nav class="nav container" aria-label="Primary navigation">
-    <a class="brand" href="#top" aria-label="Asir home"><span class="brand-mark">&gt;_</span> ASIR<span class="brand-fade">.INFRA</span></a>
-    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
-    <div class="nav-links"><a href="#about">About</a><a href="#stack">Stack</a><a href="#architecture">Architecture</a><a href="#projects">Projects</a><a class="nav-cta" href="#contact">Let's talk <span>↗</span></a></div>
-  </nav></header>
+  <!-- Decorative background elements -->
+  <div class="noise" aria-hidden="true"></div>
+  <div class="orb orb-one" aria-hidden="true"></div>
+  <div class="orb orb-two" aria-hidden="true"></div>
+
+  <!-- ══════════════════════════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════════════════════ -->
+  <header class="nav-wrap">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Asir Hashmi — home">
+        <span class="brand-mark" aria-hidden="true">&gt;_</span> ASIR<span class="brand-fade">.INFRA</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+      <div class="nav-links" id="nav-links" role="list">
+        <a href="#about"        role="listitem">About</a>
+        <a href="#stack"        role="listitem">Stack</a>
+        <a href="#architecture" role="listitem">Architecture</a>
+        <a href="#projects"     role="listitem">Projects</a>
+        <a class="nav-cta" href="#contact" role="listitem">Let's talk <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
 
   <main id="top">
-    <section class="hero container">
+
+    <!-- ════════════════════════════════════════════════════════
+         HERO
+    ════════════════════════════════════════════════════════ -->
+    <section class="hero container" aria-labelledby="hero-headline">
       <div class="hero-copy reveal">
-        <p class="eyebrow"><span class="pulse"></span> Infrastructure engineer · available for collaboration</p>
-        <h1>Systems that stay <em>online.</em></h1>
+        <p class="eyebrow"><span class="pulse" aria-hidden="true"></span>Infrastructure engineer &middot; available for collaboration</p>
+        <h1 id="hero-headline">Systems that stay <em>online.</em></h1>
         <p class="hero-text">I build secure, observable Linux infrastructure — from the network edge to production workloads.</p>
-        <div class="hero-actions"><a class="button primary" href="#projects">Explore my work <span>↓</span></a><a class="button text-button" href="#contact">Start a conversation <span>→</span></a></div>
-        <div class="hero-proof"><div><strong>99.9%</strong><span>uptime mindset</span></div><div><strong>24/7</strong><span>systems thinking</span></div><div><strong>∞</strong><span>curiosity</span></div></div>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
+          <a class="button text-button" href="#contact">Start a conversation <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-proof" aria-label="Key metrics">
+          <div><strong>99.9%</strong><span>uptime mindset</span></div>
+          <div><strong>24/7</strong><span>systems thinking</span></div>
+          <div><strong>∞</strong><span>curiosity</span></div>
+        </div>
       </div>
-      <div class="terminal-card reveal delay-1" aria-label="Animated Linux terminal">
-        <div class="terminal-bar"><div class="window-dots"><i></i><i></i><i></i></div><span>asir@lab-node: ~</span><span class="terminal-status">● connected</span></div>
-        <div class="terminal-body"><p><span class="prompt">asir@lab-node</span><span class="colon">:</span><span class="path">~</span><span class="dollar">$</span> <span id="typed-command"></span><span class="cursor"></span></p><div id="terminal-output"></div></div>
-        <div class="terminal-footer"><span>SSH · TAILSCALE · KALI</span><span>UTC +05:30</span></div>
+
+      <div class="terminal-card reveal delay-1" role="img" aria-label="Animated Linux terminal showing infrastructure status check">
+        <div class="terminal-bar" aria-hidden="true">
+          <div class="window-dots"><i></i><i></i><i></i></div>
+          <span>asir@lab-node: ~</span>
+          <span class="terminal-status">● connected</span>
+        </div>
+        <div class="terminal-body" aria-hidden="true">
+          <p>
+            <span class="prompt">asir@lab-node</span><span class="colon">:</span><span class="path">~</span><span class="dollar">$</span>
+            <span id="typed-command"></span><span class="cursor"></span>
+          </p>
+          <div id="terminal-output"></div>
+        </div>
+        <div class="terminal-footer" aria-hidden="true">
+          <span>SSH · TAILSCALE · KALI</span>
+          <span>UTC +05:30</span>
+        </div>
       </div>
-      <div class="scroll-cue"><span></span> Scroll to explore</div>
+
+      <div class="scroll-cue" aria-hidden="true"><span></span> Scroll to explore</div>
     </section>
 
-    <section id="about" class="section container about-grid">
-      <div class="section-label reveal"><span>01</span> / ABOUT</div>
-      <div class="about-copy reveal"><p class="overline">The operator behind the terminal</p><h2>Infrastructure is not just servers. It is <em>trust.</em></h2><p>I am a Linux-focused infrastructure engineer with a practical obsession for resilient systems. I turn complex environments into dependable foundations: clear network paths, secure remote access, and services people can rely on.</p><p>My work sits where systems administration, networking, automation, and thoughtful operations meet.</p><a href="#contact" class="underlined">More about my approach <span>↗</span></a></div>
-      <aside class="profile-card reveal delay-1"><div class="profile-grid"></div><div class="profile-content"><div class="profile-avatar">A<span>.</span></div><p>BASED IN</p><strong>India <span>·</span> Remote</strong><div class="availability"><i></i> Open to opportunities</div></div></aside>
+    <!-- ════════════════════════════════════════════════════════
+         ABOUT
+    ════════════════════════════════════════════════════════ -->
+    <section id="about" class="section container about-grid" aria-labelledby="about-headline">
+      <div class="section-label reveal"><span aria-hidden="true">01</span> / ABOUT</div>
+      <div class="about-copy reveal">
+        <p class="overline">The operator behind the terminal</p>
+        <h2 id="about-headline">Infrastructure is not just servers. It is <em>trust.</em></h2>
+        <p>I am a Linux-focused infrastructure engineer with a practical obsession for resilient systems. I turn complex environments into dependable foundations: clear network paths, secure remote access, and services people can rely on.</p>
+        <p>My work sits where systems administration, networking, automation, and thoughtful operations meet.</p>
+        <a href="#contact" class="underlined">More about my approach <span aria-hidden="true">↗</span></a>
+      </div>
+      <aside class="profile-card reveal delay-1" aria-label="Profile summary">
+        <div class="profile-grid" aria-hidden="true"></div>
+        <div class="profile-content">
+          <div class="profile-avatar" aria-hidden="true">A<span>.</span></div>
+          <p>BASED IN</p>
+          <strong>India <span>·</span> Remote</strong>
+          <div class="availability"><i aria-hidden="true"></i> Open to opportunities</div>
+        </div>
+      </aside>
     </section>
 
-    <section id="stack" class="section stack-section"><div class="container"><div class="section-heading reveal"><div><p class="overline">Tools of the trade</p><h2>Built on a <em>reliable</em> stack.</h2></div><div class="section-label"><span>02</span> / TECHNOLOGY</div></div>
-      <div class="tech-grid">
-        <article class="tech-card reveal"><span class="card-number">01</span><div class="tech-icon linux">♟</div><h3>Linux Systems</h3><p>Kali Linux · Debian · Bash · systemd</p><div class="card-line"></div></article>
-        <article class="tech-card reveal delay-1"><span class="card-number">02</span><div class="tech-icon network">⌘</div><h3>Networking</h3><p>TCP/IP · DNS · SSH · Tailscale</p><div class="card-line"></div></article>
-        <article class="tech-card reveal delay-2"><span class="card-number">03</span><div class="tech-icon cloud">◌</div><h3>Cloud & Edge</h3><p>Cloudflare · Zero Trust · CDN</p><div class="card-line"></div></article>
-        <article class="tech-card reveal delay-3"><span class="card-number">04</span><div class="tech-icon automate">✦</div><h3>Automation</h3><p>Bash · Git · Python · Docker</p><div class="card-line"></div></article>
-      </div></div>
+    <!-- ════════════════════════════════════════════════════════
+         STACK / TECHNOLOGY
+    ════════════════════════════════════════════════════════ -->
+    <section id="stack" class="section stack-section" aria-labelledby="stack-headline">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="overline">Tools of the trade</p>
+            <h2 id="stack-headline">Built on a <em>reliable</em> stack.</h2>
+          </div>
+          <div class="section-label"><span aria-hidden="true">02</span> / TECHNOLOGY</div>
+        </div>
+        <div class="tech-grid">
+          <article class="tech-card reveal">
+            <span class="card-number" aria-hidden="true">01</span>
+            <div class="tech-icon linux" aria-hidden="true">♟</div>
+            <h3>Linux Systems</h3>
+            <p>Kali Linux · Debian · Bash · systemd</p>
+            <div class="card-line" aria-hidden="true"></div>
+          </article>
+          <article class="tech-card reveal delay-1">
+            <span class="card-number" aria-hidden="true">02</span>
+            <div class="tech-icon network" aria-hidden="true">⌘</div>
+            <h3>Networking</h3>
+            <p>TCP/IP · DNS · SSH · Tailscale</p>
+            <div class="card-line" aria-hidden="true"></div>
+          </article>
+          <article class="tech-card reveal delay-2">
+            <span class="card-number" aria-hidden="true">03</span>
+            <div class="tech-icon cloud" aria-hidden="true">◌</div>
+            <h3>Cloud &amp; Edge</h3>
+            <p>Cloudflare · Zero Trust · CDN</p>
+            <div class="card-line" aria-hidden="true"></div>
+          </article>
+          <article class="tech-card reveal delay-3">
+            <span class="card-number" aria-hidden="true">04</span>
+            <div class="tech-icon automate" aria-hidden="true">✦</div>
+            <h3>Automation</h3>
+            <p>Bash · Git · Python · Docker</p>
+            <div class="card-line" aria-hidden="true"></div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section id="architecture" class="section container"><div class="section-heading reveal"><div><p class="overline">How it connects</p><h2>Designed for the <em>real world.</em></h2></div><div class="section-label"><span>03</span> / ARCHITECTURE</div></div>
-      <div class="architecture-panel reveal"><div class="arch-top"><span>REMOTE LINUX INFRASTRUCTURE LAB</span><span class="live-dot">● LIVE TOPOLOGY</span></div><div class="architecture-map">
-        <div class="arch-node client"><b>▣</b><span>Android / Termux</span><small>Remote client</small></div><div class="arch-link link-one"><i></i><span>encrypted mesh</span></div>
-        <div class="arch-node tail"><b>◉</b><span>Tailscale</span><small>Private network</small></div><div class="arch-link link-two"><i></i><span>wireguard tunnel</span></div>
-        <div class="arch-node host"><b>▤</b><span>Windows Host</span><small>Hypervisor</small></div><div class="arch-link link-three"><i></i><span>virtual NIC</span></div>
-        <div class="arch-node kali"><b>›_</b><span>Kali Linux</span><small>VM · server</small></div><div class="arch-link link-four"><i></i><span>:80 / :22</span></div>
-        <div class="arch-node apache"><b>⬡</b><span>Apache</span><small>Web service</small></div>
-      </div><div class="arch-legend"><span><i class="legend-client"></i> Client</span><span><i class="legend-network"></i> Secure transport</span><span><i class="legend-server"></i> Compute</span></div></div>
+    <!-- ════════════════════════════════════════════════════════
+         ARCHITECTURE
+    ════════════════════════════════════════════════════════ -->
+    <section id="architecture" class="section container" aria-labelledby="arch-headline">
+      <div class="section-heading reveal">
+        <div>
+          <p class="overline">How it connects</p>
+          <h2 id="arch-headline">Designed for the <em>real world.</em></h2>
+        </div>
+        <div class="section-label"><span aria-hidden="true">03</span> / ARCHITECTURE</div>
+      </div>
+      <div class="architecture-panel" role="img" aria-label="Infrastructure topology: Android/Termux → Tailscale mesh → Windows Host hypervisor → Kali Linux VM → Apache web server">
+        <div class="arch-top" aria-hidden="true">
+          <span>REMOTE LINUX INFRASTRUCTURE LAB</span>
+          <span class="live-dot">● LIVE TOPOLOGY</span>
+        </div>
+        <div class="architecture-map" aria-hidden="true">
+          <div class="arch-node client"><b>▣</b><span>Android / Termux</span><small>Remote client</small></div>
+          <div class="arch-link link-one"><i></i><span>encrypted mesh</span></div>
+          <div class="arch-node tail"><b>◉</b><span>Tailscale</span><small>Private network</small></div>
+          <div class="arch-link link-two"><i></i><span>wireguard tunnel</span></div>
+          <div class="arch-node host"><b>▤</b><span>Windows Host</span><small>Hypervisor</small></div>
+          <div class="arch-link link-three"><i></i><span>virtual NIC</span></div>
+          <div class="arch-node kali"><b>&rsaquo;_</b><span>Kali Linux</span><small>VM · server</small></div>
+          <div class="arch-link link-four"><i></i><span>:80 / :22</span></div>
+          <div class="arch-node apache"><b>⬡</b><span>Apache</span><small>Web service</small></div>
+        </div>
+        <div class="arch-legend" aria-hidden="true">
+          <span><i class="legend-client"></i>Client</span>
+          <span><i class="legend-network"></i>Secure transport</span>
+          <span><i class="legend-server"></i>Compute</span>
+        </div>
+      </div>
     </section>
 
-    <section class="section timeline-section"><div class="container"><div class="section-heading reveal"><div><p class="overline">Learning in public</p><h2>Progress, <em>documented.</em></h2></div><div class="section-label"><span>04</span> / JOURNEY</div></div><div class="timeline">
-      <article class="timeline-item reveal"><div class="time">01</div><div class="timeline-dot"></div><div><p class="timeline-tag">FOUNDATION</p><h3>Linux system administration</h3><p>Built practical fluency with the shell, users, permissions, services and package management.</p></div></article>
-      <article class="timeline-item reveal"><div class="time">02</div><div class="timeline-dot"></div><div><p class="timeline-tag">CONNECTIVITY</p><h3>Remote access & networking</h3><p>Configured SSH and Tailscale for safe, private access across devices and networks.</p></div></article>
-      <article class="timeline-item reveal"><div class="time">03</div><div class="timeline-dot active"></div><div><p class="timeline-tag">NOW BUILDING</p><h3>Automation & observability</h3><p>Extending the lab with containers, monitoring, cloud edge services and repeatable automation.</p></div></article>
-    </div></div></section>
+    <!-- ════════════════════════════════════════════════════════
+         JOURNEY / TIMELINE
+    ════════════════════════════════════════════════════════ -->
+    <section class="section timeline-section" aria-labelledby="journey-headline">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="overline">Learning in public</p>
+            <h2 id="journey-headline">Progress, <em>documented.</em></h2>
+          </div>
+          <div class="section-label"><span aria-hidden="true">04</span> / JOURNEY</div>
+        </div>
+        <ol class="timeline" aria-label="Engineering journey timeline">
+          <li class="timeline-item reveal">
+            <div class="time" aria-hidden="true">01</div>
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div>
+              <p class="timeline-tag">FOUNDATION</p>
+              <h3>Linux system administration</h3>
+              <p>Built practical fluency with the shell, users, permissions, services and package management.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="time" aria-hidden="true">02</div>
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div>
+              <p class="timeline-tag">CONNECTIVITY</p>
+              <h3>Remote access &amp; networking</h3>
+              <p>Configured SSH and Tailscale for safe, private access across devices and networks.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="time" aria-hidden="true">03</div>
+            <div class="timeline-dot active" aria-hidden="true"></div>
+            <div>
+              <p class="timeline-tag">NOW BUILDING</p>
+              <h3>Automation &amp; observability</h3>
+              <p>Extending the lab with containers, monitoring, cloud edge services and repeatable automation.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
 
-    <section id="projects" class="section container"><div class="section-heading reveal"><div><p class="overline">Selected work</p><h2>Projects with <em>purpose.</em></h2></div><a class="underlined reveal" href="https://github.com/Your-high-lord/remote-linux-infrastructure-lab" target="_blank" rel="noreferrer">View GitHub <span>↗</span></a></div><div class="project-grid">
-      <article class="project featured reveal"><div class="project-visual server-visual"><div class="server-rack"><i></i><i></i><i></i><i></i></div><div class="server-overlay"><span>INFRASTRUCTURE LAB</span><b>01</b></div></div><div class="project-info"><div><p>HOMELAB · LINUX · NETWORKING</p><h3>Remote Linux Infrastructure Lab</h3></div><a href="https://github.com/Your-high-lord/remote-linux-infrastructure-lab" target="_blank" rel="noreferrer" aria-label="View project">↗</a></div></article>
-      <article class="project reveal delay-1"><div class="project-visual access-visual"><div class="access-rings"></div><span class="shield">◈</span><span class="access-text">ZERO TRUST<br>ACCESS</span></div><div class="project-info"><div><p>SECURITY · REMOTE ACCESS</p><h3>Private Access Mesh</h3></div><span class="soon">In progress</span></div></article>
-    </div></section>
+    <!-- ════════════════════════════════════════════════════════
+         PROJECTS
+    ════════════════════════════════════════════════════════ -->
+    <section id="projects" class="section container" aria-labelledby="projects-headline">
+      <div class="section-heading reveal">
+        <div>
+          <p class="overline">Selected work</p>
+          <h2 id="projects-headline">Projects with <em>purpose.</em></h2>
+        </div>
+        <a class="underlined reveal" href="https://github.com/Your-high-lord/remote-linux-infrastructure-lab" target="_blank" rel="noreferrer noopener">
+          View GitHub <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+      <div class="project-grid">
+        <article class="project featured reveal">
+          <div class="project-visual server-visual" aria-hidden="true">
+            <div class="server-rack"><i></i><i></i><i></i><i></i></div>
+            <div class="server-overlay"><span>INFRASTRUCTURE LAB</span><b>01</b></div>
+          </div>
+          <div class="project-info">
+            <div>
+              <p>HOMELAB · LINUX · NETWORKING</p>
+              <h3>Remote Linux Infrastructure Lab</h3>
+            </div>
+            <a href="https://github.com/Your-high-lord/remote-linux-infrastructure-lab" target="_blank" rel="noreferrer noopener" aria-label="View Remote Linux Infrastructure Lab on GitHub">↗</a>
+          </div>
+        </article>
+        <article class="project reveal delay-1">
+          <div class="project-visual access-visual" aria-hidden="true">
+            <div class="access-rings"></div>
+            <span class="shield">◈</span>
+            <span class="access-text">ZERO TRUST<br>ACCESS</span>
+          </div>
+          <div class="project-info">
+            <div>
+              <p>SECURITY · REMOTE ACCESS</p>
+              <h3>Private Access Mesh</h3>
+            </div>
+            <span class="soon">In progress</span>
+          </div>
+        </article>
+      </div>
+    </section>
 
-    <section class="section container skills-wrap"><div class="skills-copy reveal"><p class="overline">Capability snapshot</p><h2>Always learning.<br><em>Always shipping.</em></h2><p>Technical depth is a moving target. Here is where I am investing my focus right now.</p></div><div class="skill-bars reveal delay-1"><div class="skill"><div><span>Linux Administration</span><b>88%</b></div><i><em style="--value:88%"></em></i></div><div class="skill"><div><span>Networking & Security</span><b>82%</b></div><i><em style="--value:82%"></em></i></div><div class="skill"><div><span>Web Infrastructure</span><b>78%</b></div><i><em style="--value:78%"></em></i></div><div class="skill"><div><span>Automation & Scripting</span><b>70%</b></div><i><em style="--value:70%"></em></i></div></div></section>
+    <!-- ════════════════════════════════════════════════════════
+         SKILLS
+    ════════════════════════════════════════════════════════ -->
+    <section class="section container skills-wrap" aria-labelledby="skills-headline">
+      <div class="skills-copy reveal">
+        <p class="overline">Capability snapshot</p>
+        <h2 id="skills-headline">Always learning.<br><em>Always shipping.</em></h2>
+        <p>Technical depth is a moving target. Here is where I am investing my focus right now.</p>
+      </div>
+      <div class="skill-bars reveal delay-1" role="list" aria-label="Skill proficiency levels">
+        <div class="skill" role="listitem">
+          <div><span>Linux Administration</span><b aria-label="88 percent">88%</b></div>
+          <i aria-hidden="true"><em style="--value:88%"></em></i>
+        </div>
+        <div class="skill" role="listitem">
+          <div><span>Networking &amp; Security</span><b aria-label="82 percent">82%</b></div>
+          <i aria-hidden="true"><em style="--value:82%"></em></i>
+        </div>
+        <div class="skill" role="listitem">
+          <div><span>Web Infrastructure</span><b aria-label="78 percent">78%</b></div>
+          <i aria-hidden="true"><em style="--value:78%"></em></i>
+        </div>
+        <div class="skill" role="listitem">
+          <div><span>Automation &amp; Scripting</span><b aria-label="70 percent">70%</b></div>
+          <i aria-hidden="true"><em style="--value:70%"></em></i>
+        </div>
+      </div>
+    </section>
 
-    <section class="section cert-section"><div class="container"><div class="cert-card reveal"><div><p class="overline">Currently pursuing</p><h2>Credentials that<br>back the <em>craft.</em></h2></div><div class="cert-list"><div><span>01</span><p><b>Red Hat Certified System Administrator</b><small>RHCSA · In preparation</small></p><i>↗</i></div><div><span>02</span><p><b>Cisco Certified Network Associate</b><small>CCNA · Learning track</small></p><i>↗</i></div><div><span>03</span><p><b>Cloudflare Zero Trust</b><small>Security & connectivity</small></p><i>↗</i></div></div></div></div></section>
+    <!-- ════════════════════════════════════════════════════════
+         CERTIFICATIONS
+    ════════════════════════════════════════════════════════ -->
+    <section class="section cert-section" aria-labelledby="certs-headline">
+      <div class="container">
+        <div class="cert-card reveal">
+          <div>
+            <p class="overline">Currently pursuing</p>
+            <h2 id="certs-headline">Credentials that<br>back the <em>craft.</em></h2>
+          </div>
+          <div class="cert-list">
+            <div>
+              <span aria-hidden="true">01</span>
+              <p><b>Red Hat Certified System Administrator</b><small>RHCSA · In preparation</small></p>
+              <i aria-hidden="true">↗</i>
+            </div>
+            <div>
+              <span aria-hidden="true">02</span>
+              <p><b>Cisco Certified Network Associate</b><small>CCNA · Learning track</small></p>
+              <i aria-hidden="true">↗</i>
+            </div>
+            <div>
+              <span aria-hidden="true">03</span>
+              <p><b>Cloudflare Zero Trust</b><small>Security &amp; connectivity</small></p>
+              <i aria-hidden="true">↗</i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <section id="contact" class="contact-section"><div class="container contact-inner reveal"><p class="overline">Have an infrastructure challenge?</p><h2>Let's build something<br><em>that lasts.</em></h2><a class="contact-email" href="mailto:hello@example.com">hello@example.com <span>↗</span></a><div class="contact-links"><a href="https://github.com/Your-high-lord" target="_blank" rel="noreferrer">GitHub</a><a href="#top">Back to top ↑</a></div></div></section>
+    <!-- ════════════════════════════════════════════════════════
+         CONTACT
+    ════════════════════════════════════════════════════════ -->
+    <section id="contact" class="contact-section" aria-labelledby="contact-headline">
+      <div class="container contact-inner reveal">
+        <p class="overline">Have an infrastructure challenge?</p>
+        <h2 id="contact-headline">Let's build something<br><em>that lasts.</em></h2>
+        <a class="contact-email" href="mailto:tihotspot12345@gmail.com">
+          tihotspot12345@gmail.com <span aria-hidden="true">↗</span>
+        </a>
+        <nav class="contact-links" aria-label="Social and external links">
+          <a href="https://github.com/Your-high-lord" target="_blank" rel="noreferrer noopener" aria-label="GitHub profile (opens in new tab)">GitHub</a>
+          <a href="https://www.linkedin.com/in/asir-hashmi-ba8398225" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn profile (opens in new tab)">LinkedIn</a>
+          <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+        </nav>
+      </div>
+    </section>
+
   </main>
-  <footer><div class="container"><span>© 2025 ASIR. ENGINEERED WITH INTENT.</span><span>LINUX · NETWORKS · CLOUD</span></div></footer>
+
+  <footer>
+    <div class="container">
+      <span>© 2026 ASIR. ENGINEERED WITH INTENT.</span>
+      <span>LINUX · NETWORKS · CLOUD</span>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
